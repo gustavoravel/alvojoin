@@ -8,4 +8,5 @@
   <p>Data de Expiração: {{ alvo.data_expiracao }}</p>
   <a href="{% url 'editar_alvo' pk=alvo.pk %}">Editar</a>
   <a href="{% url 'excluir_alvo' pk=alvo.pk %}">Excluir</a>
+  <a href="{% url 'lista_alvos' %}">Voltar</a>
 {% endblock %}

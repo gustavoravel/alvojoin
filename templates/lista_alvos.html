@@ -2,10 +2,13 @@
 
 {% block content %}
   <h2>Lista de Alvos</h2>
-  <ul>
+  <div class="dashboard-container">
     {% for alvo in object_list %}
-      <li><a href="{% url 'detalhe_alvo' pk=alvo.pk %}">{{ alvo.nome }}</a></li>
+      <div class="target-card">
+        <h3><a href="{% url 'detalhe_alvo' pk=alvo.pk %}">{{ alvo.nome }}</a></h3>
+        <p>Detalhes sobre o Alvo.</p>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
   <a href="{% url 'adicionar_alvo' %}">Adicionar Novo Alvo</a>
 {% endblock %}
