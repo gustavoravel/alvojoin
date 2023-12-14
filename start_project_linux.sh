@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Crie um ambiente virtual (se não existir)
+# Cria um ambiente virtual (se não existir)
 python3 -m venv venv
 
 # Ativa o ambiente virtual

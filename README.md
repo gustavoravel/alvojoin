@@ -14,12 +14,6 @@ start_project_linux.sh (Linux)
 
 start_project_windows.ps1 (Windows)
 
-## Admin
-
-user:admin
-
-password:admin
-
 ## Tests
 
 Run these commands to execute tests:
@@ -28,4 +22,10 @@ coverage run --omit='\*/venv/\*' manage.py test
 
 coverage html
 
+## Server
+
 The server will be available at http://localhost:8000/.
+
+## Documentation
+
+The docs will be available at http://localhost:8000/api/schema/swagger-ui/
