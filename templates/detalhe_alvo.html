@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ alvo.nome }}</h2>
+  <p>Identificador: {{ alvo.identificador }}</p>
+  <p>Latitude: {{ alvo.latitude }}</p>
+  <p>Longitude: {{ alvo.longitude }}</p>
+  <p>Data de Expiração: {{ alvo.data_expiracao }}</p>
+  <a href="{% url 'editar_alvo' pk=alvo.pk %}">Editar</a>
+  <a href="{% url 'excluir_alvo' pk=alvo.pk %}">Excluir</a>
+{% endblock %}

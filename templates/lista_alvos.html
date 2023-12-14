@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Lista de Alvos</h2>
+  <ul>
+    {% for alvo in object_list %}
+      <li><a href="{% url 'detalhe_alvo' pk=alvo.pk %}">{{ alvo.nome }}</a></li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'adicionar_alvo' %}">Adicionar Novo Alvo</a>
+{% endblock %}
